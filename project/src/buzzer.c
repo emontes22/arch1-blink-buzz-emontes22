@@ -2,6 +2,8 @@
 #include "libTimer.h"
 #include "buzzer.h"
 
+static char buzzerState = 0;
+
 void buzzer_init()
 {
     /* 
@@ -24,8 +26,22 @@ void buzzer_set_period(short cycles) /* buzzer clock = 2MHz.  (period of 1k resu
   CCR1 = cycles >> 1;		/* one half cycle */
 }
 
+void buzzer_play(){
 
-    
-    
-  
-
+  switch(buzzerState)
+    {
+    case 0: buzzer_set_period(750); buzzerState++; break;
+    case 1:
+    case 2:
+    case 3: buzzer_set_period(630); buzzerState++; break;
+    case 4:
+    case 5:
+    case 6: buzzer_set_period(560); buzzerState++; break;
+    case 7:
+    case 8:
+    case 9: buzzer_set_period(950); buzzerState++; break;
+    case 10:
+    case 11:
+    case 12: buzzer_set_period(500); buzzerState = 0; break;
+  }
+}
