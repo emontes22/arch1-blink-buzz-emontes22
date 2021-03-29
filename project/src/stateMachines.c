@@ -48,6 +48,7 @@ void blinkBoth()
   led_update();
 }
 
+/* Function to turn everything off */
 void ledsOff()
 {
   red_on = 0;
@@ -56,6 +57,7 @@ void ledsOff()
   led_update();
 }
 
+/* State of the buttons */
 void state_advance()
 {
   switch(bPressed)
