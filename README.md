@@ -16,9 +16,9 @@ This toy:
 Inside the *Virtual Machine*,
 
 1. Connect the *MSP430 Microcontroller* to the computer
-2. Go to **project** directory
+2. Go to **/project** directory
 3. Execute the command `make`
-4. Go to **src** directory
+4. Go to **/src** directory
 5. Execute the command `make load`
 6. Enjoy!
 
