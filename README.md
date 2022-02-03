@@ -1,25 +1,30 @@
-# Lab 2: Blinky-Buzzy Toy
+# Lab 2: Blinky-Buzzy Toy on MSP430 Microcontroller 
 
-For your second project, your task is to use the MSP430 Microcontroller and your creativity to design a toy. Each MSP430 board is equipped with buttons, LED's, a speaker, and an LED screen. Utilizing these features and your knowledge of I/O, develop a program to turn the board into a toy.
+## Overview
 
-This toy should at minimum:
+The purpose of this project is to create a toy using the MSP430 Microcontroller. Using the knowledge of I/O and Timing simulate a toy with the MSP430 and LCD Button Boosterpack.
 
-* generate sounds,
-* dynamically change the LEDs that are illuminated, both brighly and dimmly,
-* implement a state machine to maintain the state of the toy,
-* and use the four buttons on the expansion board (P2.0-3) to transition the state machine.
+This toy:
 
-**Furthermore, at least one of the functions to transition the state machine must be written by you in assembly language.**
+* Generates sounds.
+* Dynamically changes the LEDs that are illuminated, both brighly and dimmly.
+* Implements a state machine to maintain the state of the toy.
+* Uses the four buttons on the expansion board to transition the state machine.
 
-## Getting Started 
+## Instructions
 
-Inside this repository you will find two directories:
-1. The 'demos' directory contains sample programs for you to review and learn from. These example programs are a great starting point in understanding how to program the MSP430 microcontroller. See the readme in the demo directory on how to compile and run the demo programs.
-2. The 'project' directory should contain the source code for your toy.
+Inside the *Virtual Machine*,
 
-## What Should Be In Your Repo
+1. Connect the *MSP430 Microcontroller* to the computer
+2. Go to **project** directory
+3. Execute the command `make`
+4. Go to **src** directory
+5. Execute the command `make load`
+6. Enjoy!
 
-Your project will be graded on the following items:
-* Source code for your toy (only .c, .s and .h files).
-* A README containing a description of your toy, how to compile it, how to run it, and how to use it.
-* A Makefile with appropriate rules to build and clean your toy.
+
+## Dependencies
+
+* Systems_VM provided by CS 3432 at UTEP
+* MSP430 Microcontroller
+* LCD Button Boosterpack
